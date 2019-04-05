@@ -14,7 +14,7 @@ import { NotificationService } from './services/notification.service'
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot()
   ],
