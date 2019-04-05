@@ -1,20 +1,24 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container-test">
+  <h1>Prueba Tecnica</h1>
+  <p>Natalie Santiago</p>
 
+  <div class="notification-form">
+    <h2>Tipo de notificación</h2>
+    <form class="">
+      <div class="notification-type">
+        <div class="type">
+          <input type="radio" name="notification" id="info" value="Info" [(ngModel)]="notificationType">
+          <label class="custom-check" for="info">Info</label>
+        </div>
+        <div class="type">
+          <input type="radio" name="notification" id="error" value="Error" [(ngModel)]="notificationType">
+          <label class="custom-check" for="error">Error</label>
+        </div>
+      </div>
+      <input class="message-input" type="text" name="message" value="" [(ngModel)]="message">
+      <div class="container-button">
+        <button type="button" name="button" (click)="showNotification()">Previsualizar</button>
+      </div>
+    </form>
+  </div>
+</div>
